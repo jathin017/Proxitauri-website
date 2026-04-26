@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proxitauri</title>
+  
+  <link rel="icon" type="image/x-icon" href="./logos/favicon.svg">
+  <link rel="stylesheet" href="./src/css/base.css" />
+  <link rel="stylesheet" href="./src/css/header.css" />
+  <link rel="stylesheet" href="./src/css/hero.css" />
+  <link rel="stylesheet" href="./src/css/sections.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <!-- <a class="brand" href="#" aria-label="Proxitauri home">Proxitauri</a> -->
+       <a class="brand" href="#" aria-label="Proxitauri home">
+  <img src="logos/Proxitauri-side-logo-transparent-white-font.svg" alt="Proxitauri" class="brand-logo">
+</a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#what-we-do">Why?</a>
+        <a href="#flight-computer">Flight Computer</a>
+        <a href="#engine">Engine</a>
+        <a href="#testing">Testing</a>
+      </nav>
+
+      <button class="menu-button" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Page -->
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h3 class="hero__title">STOP REBUILDING.<br>START FLYING.</h3>
+
+        <p class="hero__subtitle">
+          Integrated flight computers and control systems for rocket teams.
+        </p>
+
+        <div class="hero__actions">
+          <a class="button-outline" href="./configurator/configurator.html">
+            <span id="redirect"><p id="redirect-text" >Build</p></span>              
+            <span class="play-triangle"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  <section id="what-we-do" class="mission-section">
+    <div class="mission-section__inner">
+      <p class="section-kicker">Why Proxitauri</p>
+      <h2 class="mission-title">
+        Every rocket team rebuilds the same infrastructure from scratch. The same flight computers. The same control systems. The same solved problems — over and over again.
+      </h2>
+      <p class="mission-body">
+        We build the standardized systems so teams can skip years of reinventing and focus on what actually matters: the frontier no one has reached yet.
+      </p>
+    </div>
+  </section>
+  <section id="flight-computer" class="content-section content-section-1">
+      <div class="content-section__inner">
+        <p class="section-kicker">Flight Computer Systems</p>
+        <h2 class="section-title">
+          Built for high-rate testing, deterministic control, and fast iteration.
+        </h2>
+      </div>
+    </section>
+
+  <section id="engine" class="content-section content-section-2">
+      <div class="content-section__inner">
+        <p class="section-kicker">Rocket Engine Systems</p>
+        <h2 class="section-title">
+          Develop rocket engines for reusable flight systems.
+        </h2>
+      </div>
+    </section>
+
+  <section id="testing" class="content-section content-section-3">
+      <div class="content-section__inner">
+        <p class="section-kicker">Testing</p>
+        <h2 class="section-title">
+          Iterate & Push limits of what can be possible.
+        </h2>
+      </div>
+    </section>
+  </main>
+
+  <script src="./src/js/headerFade.js"></script>
+</body>
+</html>

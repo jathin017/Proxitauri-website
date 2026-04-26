@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Builder — Proxitauri</title>
+  <link rel="icon" type="image/x-icon" href="../logos/favicon.svg">
+  <link rel="stylesheet" href="../src/css/base.css"/>
+  <link rel="stylesheet" href="../src/css/header.css"/>
+  <link rel="stylesheet" href="configurator.css"/>
+</head>
+<body>
+
+  <!-- Header (same as main site) -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <a class="brand" href="../index.html" aria-label="Proxitauri home">
+        <img src="../logos/Proxitauri-side-logo-transparent-white-font.svg" alt="Proxitauri" class="brand-logo">
+      </a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="../index.html#flight-computer">Flight Computer</a>
+        <a href="../index.html#engine">Engine</a>
+        <a href="../index.html#testing">Testing</a>
+        <a href="configurator.html" style="color: rgba(255,255,255,0.92)">Build</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="config-main">
+
+    <!-- <div class="config-header">
+      <p class="config-header__label">Proxitauri — System Builder</p>
+      <h1 class="config-header__title">Configure your flight system.</h1>
+    </div> -->
+
+    <div class="config-layout">
+      <div class="config-left">
+        <div class="config-header">
+          <p class="config-header__label">Proxitauri — System Builder</p>
+          <h1 class="config-header__title">Configure your   flight system.</h1>
+        </div>
+        <!-- OPTIONS -->
+        <div class="config-options">
+
+          <!-- Flight Computer -->
+          <div class="config-section">
+            <p class="config-section__label">Flight Computer</p>
+
+            <div class="option-row">
+              <span class="option-name">Processor</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="cpu" data-val="STM32 F4" data-price="0">STM32 F4</div>
+                <div class="chip" data-group="cpu" data-val="STM32 H7" data-price="80">STM32 H7</div>
+              </div>
+            </div>
+
+            <div class="option-row">
+              <span class="option-name">GPS</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="gps" data-val="Single" data-price="0">Single</div>
+                <div class="chip" data-group="gps" data-val="Dual RTK" data-price="220">Dual RTK</div>
+              </div>
+            </div>
+
+            <div class="option-row">
+              <span class="option-name">IMU</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="imu" data-val="6-DOF" data-price="0">6-DOF</div>
+                <div class="chip" data-group="imu" data-val="9-DOF" data-price="60">9-DOF</div>
+              </div>
+            </div>
+
+            <div class="option-row">
+              <span class="option-name">Redundancy</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="redundancy" data-val="Single" data-price="0">Single</div>
+                <div class="chip" data-group="redundancy" data-val="Dual" data-price="350">Dual</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Control Systems -->
+          <div class="config-section">
+            <p class="config-section__label">Control Systems</p>
+
+            <div class="option-row">
+              <span class="option-name">Thrust Vector Control</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="tvc" data-val="None" data-price="0">None</div>
+                <div class="chip" data-group="tvc" data-val="Single Axis" data-price="180">1-Axis</div>
+                <div class="chip" data-group="tvc" data-val="2-Axis" data-price="340">2-Axis</div>
+              </div>
+            </div>
+
+            <div class="option-row">
+              <span class="option-name">Fin Control</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="fins" data-val="None" data-price="0">None</div>
+                <div class="chip" data-group="fins" data-val="2 Fins" data-price="120">2 Fins</div>
+                <div class="chip" data-group="fins" data-val="4 Fins" data-price="220">4 Fins</div>
+              </div>
+            </div>
+
+            <div class="option-row">
+              <span class="option-name">
+                Propulsive Landing
+                <span class="tag-soon">Soon</span>
+              </span>
+              <div class="option-chips">
+                <div class="chip active" data-group="landing" data-val="No" data-price="0">No</div>
+                <div class="chip" data-group="landing" data-val="Yes" data-price="600">Yes</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recovery & Telemetry -->
+          <div class="config-section">
+            <p class="config-section__label">Recovery & Telemetry</p>
+
+            <div class="option-row">
+              <span class="option-name">Recovery System</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="recovery" data-val="Basic" data-price="0">Basic</div>
+                <div class="chip" data-group="recovery" data-val="Dual Deploy" data-price="140">Dual Deploy</div>
+              </div>
+            </div>
+
+            <div class="option-row">
+              <span class="option-name">Telemetry</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="telemetry" data-val="433 MHz" data-price="0">433 MHz</div>
+                <div class="chip" data-group="telemetry" data-val="915 MHz" data-price="40">915 MHz</div>
+                <div class="chip" data-group="telemetry" data-val="Full RTK" data-price="180">Full RTK</div>
+              </div>
+            </div>
+
+            <div class="option-row">
+              <span class="option-name">Data Logging</span>
+              <div class="option-chips">
+                <div class="chip active" data-group="logging" data-val="4 GB" data-price="0">4 GB</div>
+                <div class="chip" data-group="logging" data-val="16 GB" data-price="30">16 GB</div>
+                <div class="chip" data-group="logging" data-val="64 GB" data-price="70">64 GB</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUMMARY PANEL -->
+      <div class="summary-panel">
+        <p class="summary-panel__label">Your Configuration</p>
+
+        <div class="summary-lines">
+          <div class="summary-line">
+            <span class="summary-key">Processor</span>
+            <span class="summary-val" id="s-cpu">STM32 F4</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">GPS</span>
+            <span class="summary-val" id="s-gps">Single</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">IMU</span>
+            <span class="summary-val" id="s-imu">6-DOF</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">Redundancy</span>
+            <span class="summary-val" id="s-redundancy">Single</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">TVC</span>
+            <span class="summary-val" id="s-tvc">None</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">Fin Control</span>
+            <span class="summary-val" id="s-fins">None</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">Landing</span>
+            <span class="summary-val" id="s-landing">No</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">Recovery</span>
+            <span class="summary-val" id="s-recovery">Basic</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">Telemetry</span>
+            <span class="summary-val" id="s-telemetry">433 MHz</span>
+          </div>
+          <div class="summary-line">
+            <span class="summary-key">Storage</span>
+            <span class="summary-val" id="s-logging">4 GB</span>
+          </div>
+        </div>
+
+        <div class="price-block">
+          <p class="price-label">Estimated Hardware Cost</p>
+          <p class="price-value" id="price">$890</p>
+          <p class="price-note">Final pricing confirmed on request</p>
+        </div>
+
+        <a href="mailto:contact@proxitauri.com?subject=Flight System Request Access" class="cta">
+          Request Access
+          <span class="cta-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- <script src="../src/js/headerFade.js"></script> -->
+  <script src="configurator.js"></script>
+</body>
+</html>

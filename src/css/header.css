@@ -1,0 +1,141 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  /* height: var(--header-height); */
+  background: transparent;
+  transition: opacity 240ms ease, transform 240ms ease;
+}
+
+.site-header__inner {
+  height: 100%;
+  max-width: var(--max-width);
+  /* margin: 0 auto; */
+  /* padding: 0 var(--page-padding); */
+  display: flex;
+  align-items: center;
+  gap: 56px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  /* letter-spacing: 0.42em; */
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  /* text-transform: uppercase; */
+  transform: scaleX(1.18);
+  transform-origin: left center;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.primary-nav a,
+.secondary-nav a {
+  position: relative;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.095em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  white-space: nowrap;
+}
+
+.primary-nav a::after,
+.secondary-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 180ms ease;
+}
+
+.primary-nav a:hover::after,
+.secondary-nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left center;
+}
+
+.secondary-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.launch-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 50px;
+  min-width: 260px;
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 3px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.menu-button {
+  display: none;
+  width: 28px;
+  height: 22px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  height: 2px;
+  margin: 5px 0;
+  background: white;
+}
+
+@media (max-width: 1180px) {
+  .primary-nav,
+  .secondary-nav,
+  .launch-pill {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  .brand {
+    font-size: 16px;
+  }
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 100px;   /* adjust */
+  width: auto;
+  display: block;
+  margin-right: 30px;
+  margin-left: 20px;
+}

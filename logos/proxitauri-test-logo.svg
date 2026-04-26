@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1240" viewBox="0 0 1240 1240">
+  <rect width="1240" height="1240" fill="#ffffff"/>
+
+  <!-- Orbital mark -->
+  <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="640" cy="492" rx="305" ry="125" transform="rotate(-23 640 492)" stroke-width="7"/>
+    <ellipse cx="690" cy="452" rx="68" ry="45" transform="rotate(-18 690 452)" stroke-width="6"/>
+  </g>
+
+  <!-- Stars / bodies -->
+  <circle cx="456" cy="657" r="23" fill="#000000"/>
+  <circle cx="654" cy="421" r="15" fill="#000000"/>
+  <circle cx="746" cy="469" r="20" fill="#000000"/>
+
+  <!-- Wordmark -->
+  <text x="620" y="815"
+        text-anchor="middle"
+        font-family="Orbitron, Eurostile, Bank Gothic, Arial, sans-serif"
+        font-size="68"
+        font-weight="500"
+        letter-spacing="38"
+        fill="#000000">PROXITAURI</text>
+</svg>
